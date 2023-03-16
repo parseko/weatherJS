@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Golos Text", sans-serif;
+}
+body {
+    margin: 0;
+}
+.weather_card{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+}
+.card {
+    margin-top: 2rem;
+    width: 20rem;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card_title {
+    text-align: center;
+    font-weight: "500";
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}
+.card_content_img {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.conten_img_image {
+    border-radius: 4px;
+}
+
+.card_content_description {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.content_description_title {
+    font-weight: "500";
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.content_description_text {
+    margin-bottom: 1rem;
+}
