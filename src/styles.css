@@ -10,11 +10,10 @@ body {
 }
 .weather_card{
     display: grid;
-    position: absolute;
     justify-content: center;
     align-self: center;
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 .card {
     margin-top: 2rem;
@@ -79,6 +78,7 @@ input[type="text"] {
 ul {
     list-style: none;
     margin: 0;
+    z-index: 10;
 }
 
 .cities {

@@ -1,3 +1,5 @@
+import { getWeatherUser } from "./weatherAPI";
+
 let cities = [];
 
 const getCities = async () => {
@@ -15,8 +17,13 @@ const citiesArray = async () => {
 
 let sortedCities = cities.sort();
 
+const getLatitudeLongitude = async (value) => {
+    (await getCities()).forEach((city) => {
+        if (city.name == value) {
+            const { lon, lat } = city.coord;
+            getWeatherUser(lat, lon);
+        }
+    });
+};
 
-export {
-    sortedCities,
-    citiesArray
-}
+export { sortedCities, citiesArray, getLatitudeLongitude };
